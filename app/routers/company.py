@@ -23,7 +23,7 @@ async def research_company_endpoint(request: CompanyRequest):
             success=True,
             data=profile
         )
-    
+        
     except Exception as e:
         # Something went wrong → return clean error
         raise HTTPException(status_code=500, detail=str(e))
